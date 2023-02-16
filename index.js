@@ -70,6 +70,9 @@ const questions = [
 },
 {
     // Tests
+    type: 'input',
+    name: 'tests',
+    message: 'Please provide test instructions for your Project:'
 }, 
 {
     // Questions
