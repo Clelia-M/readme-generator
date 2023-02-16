@@ -29,9 +29,12 @@ const questions = [
 },
 {
     // Usage
+    type: 'input',
+    name: 'usage', 
+    message: 'Please provide usage instructions for your Project:'
 },
 {
-    // License
+    // License 
 }, 
 {
     // Contributing
