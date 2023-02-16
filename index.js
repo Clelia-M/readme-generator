@@ -3,6 +3,13 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+const licenseOptions = [
+    {
+        name: 'MIT', 
+        badge: 'https://img.shields.io/badge/License-MIT-blue.svg'
+    }
+]
+
 // array of questions for user
 const questions = [
 {
@@ -35,6 +42,10 @@ const questions = [
 },
 {
     // License 
+    type: 'list',
+    name: 'license',
+    message: 'Please choose a license for your project'
+    choises: // to write a consta for the options 
 }, 
 {
     // Contributing
