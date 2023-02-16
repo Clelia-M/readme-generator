@@ -12,7 +12,15 @@ const licenseOptions = [
         name: 'GPL',
         badge: 'https://img.shields.io/badge/License-GPL-blue.svg'
     },
-]
+    {
+        name: 'Apache',
+        badge: 'https://img.shields.io/badge/License-Apache-blue.svg'
+    },
+    {
+        name: 'GNU',
+        badge: 'https://img.shields.io/badge/License-GNU-blue.svg'
+    },
+];
 
 // array of questions for user
 const questions = [
