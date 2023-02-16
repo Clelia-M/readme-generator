@@ -5,7 +5,11 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
-
+{
+    type: 'input',
+    name: 'title',
+    message: 'What is the title of your Project?'
+}, 
 ];
 
 // function to write README file
