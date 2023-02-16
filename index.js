@@ -82,6 +82,9 @@ const questions = [
 },
 {
     // Questions 2 Email address
+    type: 'input',
+    name: 'email',
+    message: 'Which is your email address?',
 }
 ];
 
