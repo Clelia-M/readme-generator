@@ -64,6 +64,9 @@ const questions = [
 }, 
 {
     // Contributing
+    type: 'input',
+    name: 'contribuiting',
+    message: 'Please provide contribution guidelines for your Project:',
 },
 {
     // Tests
