@@ -56,8 +56,11 @@ const questions = [
     // License 
     type: 'list',
     name: 'license',
-    message: 'Please choose a license for your project'
-    choices: // to write a const for the options 
+    message: 'Please choose a license for your project',
+    // choices wants an array of strings 
+    // maps property maps each element in the const licenseOptions using the name property
+    // option=> function that takes an object and returns the value of its name property
+    choices: licenseOptions.map(option => option.name)
 }, 
 {
     // Contributing
