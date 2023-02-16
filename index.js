@@ -7,7 +7,11 @@ const licenseOptions = [
     {
         name: 'MIT', 
         badge: 'https://img.shields.io/badge/License-MIT-blue.svg'
-    }
+    }, 
+    {
+        name: 'GPL',
+        badge: 'https://img.shields.io/badge/License-GPL-blue.svg'
+    },
 ]
 
 // array of questions for user
@@ -45,7 +49,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'Please choose a license for your project'
-    choises: // to write a consta for the options 
+    choices: // to write a const for the options 
 }, 
 {
     // Contributing
