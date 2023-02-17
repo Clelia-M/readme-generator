@@ -30,7 +30,7 @@ const licenseOptions = [
     },
 ];
 
-// array of questions for user
+// Array of questions that will be presented to the user when the program run to store the README data
 const questions = [
 {
     // The title of my project
@@ -63,7 +63,7 @@ const questions = [
     message: 'Please choose a license for your project',
     // choices wants an array of strings 
     // maps property maps each element in the const licenseOptions using the name property
-    // option=> function that takes an object and returns the value of its name property
+    // option => function that takes an object and returns the value of its name property
     choices: licenseOptions.map(option => option.name)
 }, 
 {
@@ -93,8 +93,15 @@ const questions = [
 ];
 
 // function to write README file
+// function writetoFile takes a fileName and data parameter and writes the data to a file the the given name
 function writeToFile(fileName, data) {
+
+    // path.join method to create a file path that is relative to this directory
     const filePath = path.join(__dirname, fileName);
+
+    // fs.writeFile method to write the data to the file
+    // if there is an error is logged to the console
+    // else success message
     fs.writeFile(filePath, data, err => {
         if(err) {
             console.error(err);
@@ -106,6 +113,8 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+
+    
     inquirer.prompt(questions)
     .then(answers => {
         console.log('Generating README...');
