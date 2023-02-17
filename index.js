@@ -90,6 +90,14 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    const filePath = path.join(__dirname, fileName);
+    fs.writeFile(filePath, data, err => {
+        if(err) {
+            console.error(err);
+        } else {
+            console.log(`Successfully generated ${fileName}`);
+        }
+        });
 }
 
 // function to initialize program
