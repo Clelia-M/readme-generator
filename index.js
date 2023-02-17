@@ -113,18 +113,20 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
-    
+// inquirer prompt method to present the qeustions to the user    
     inquirer.prompt(questions)
+    // then generates a markdown file using the user's answers 
     .then(answers => {
         console.log('Generating README...');
         const markdown = generateMarkdown(answers);
+        // write it to a file using writeToFile function. 
         writeToFile('README.md', markdown);
     })
+    // if there is an error during the process, it is logged to the console
     .catch(err => {
         console.error(err);
     });
 }
 
-// function call to initialize program
+// function call to initialize program - it starts the program
 init();
