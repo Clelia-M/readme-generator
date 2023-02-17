@@ -1,5 +1,8 @@
 # Command-line README Generator
 
+  ## Disclaimer
+  This README file has been created using this Command-line README Generator. A video of the running application is stored for review in the assets folder of this repository. 
+
   ## Description
   This command-line application allows users to quickly and easily generate a professional README file for their projects. Users are prompted with a series of questions about their project, including its title, description, installation instructions, usage instructions, license, contribution guidelines, tests, and contact information. The application then generates a high-quality, well-formatted README file based on the user's input, saving them time and effort. The application is built using Node.js and the Inquirer.js library.
 
@@ -28,3 +31,9 @@
 
   ## Questions
   If you have any questions abut this application, please feel free to contact me directly at clelia.mangione@gmail.com. You can find more of projects at Clelia-M.
+
+## Final Results
+
+A video of the runnign application is stored for review in the assets folder of this repository. 
+
+![final results](https://github.com/Clelia-M/readme-generator/blob/70faec14690ac982fedcb40be8a67fadb0a59ab1/assets/Node%20js%20Challenge%2011%20Screenshot.png)
