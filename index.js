@@ -37,10 +37,6 @@ const questions = [
     message: 'Please provide a description of your Project:', 
 }, 
 
-{
-    //Table of Contents
-},
-
 { // Installation
     type: 'input',
     name: 'installation', 
@@ -102,7 +98,15 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions)
+    .then(answers => {
+        console.log('Generating README...');
+        const markdown = generateMarkdown(answers);
+        writeToFile('README.md', markdown);
+    })
+    .catch(err => {
+        console.error(err);
+    });
 }
 
 // function call to initialize program
