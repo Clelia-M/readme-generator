@@ -1,8 +1,16 @@
+// import fs module
 const fs = require("fs");
+
+// import the path module 
 const path = require('path');
+
+// import the inquirer module
 const inquirer = require("inquirer");
+
+// import the generateMarkdown function from the generateMarkdown.js file in the utils folder
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// Array of licence options for the user to choose from
 const licenseOptions = [
     {
         name: 'MIT', 
